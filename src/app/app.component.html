@@ -1,0 +1,24 @@
+<div class="body">
+	<div class="text-center heads">
+		<p>Kerala Districts</p>
+	</div>
+	
+	<div class="container">
+		<div class="row g-5">
+				@for (item of districts; track $index) {
+					<div class="col col-3">
+						<div class="card" style="width: 18rem;">
+							<img src={{item.image}} class="card-img-top" width="100%" height="200px" alt="...">
+							<div class="card-body">
+								<h5 class="card-title">{{item.title}}</h5>
+								<p class="card-text">{{item.desc}}</p>
+								<button class="button-74" role="button">Visit</button>
+
+							</div>
+						</div>
+					</div>
+				}
+	
+		</div>
+	</div>
+</div>
